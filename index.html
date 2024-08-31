@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Pokedex</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .sticky-header {
+        z-index: 50;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-cover bg-no-repea bg-center h-screen"
+    style="background-image: url('./pokemon-bg.jpg')"
+  >
+    <header
+      class="sticky top-0 bg-white bg-opacity-80 p-4 border-b border-gray-300 sticky-header"
+    >
+      <h1 class="text-2xl font-bold mb-2">Pokémon ng mga taga CCS</h1>
+      <input
+        type="text"
+        id="search"
+        placeholder="Search Pokémon..."
+        class="w-full p-4 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+    </header>
+    <main class="pt-16">
+      <div
+        class="container mx-auto p-4 bg-transparent bg-opacity-80 rounded-lg"
+      >
+        <div id="app"></div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
